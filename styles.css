@@ -82,6 +82,10 @@ a {
     border: solid #fff 5px;
 }
 
+.profile-img:hover {
+    border: solid rgba(0, 0, 0, 0.125) 5px;
+}
+
 .intro {
     margin-top: 10px;
     text-align: center;
@@ -129,6 +133,10 @@ a {
 
 .main-content {
     margin: 10px 30px;
+}
+
+.main-content span {
+    color: #0096cc;
 }
 
 .contact-list {
