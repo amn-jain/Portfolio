@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -132,6 +133,11 @@ a {
 
 .contact-list {
     margin: 10px 30px;
+}
+
+.contact-list span {
+    font-family: 'Open Sans', sans-serif;
+    padding: 2px 0px 2px 5px;
 }
 
 .footer ul {
