@@ -156,3 +156,46 @@ a {
 .footer ul li {
     padding: 5px;
 }
+
+@media screen and (max-width: 576px) {
+
+    .grid-container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 500px 200px 40px;
+    }
+
+    .content {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin: auto auto;
+        background-color: #fff;
+    }
+
+    .contact {
+        background-color: #fff;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        color: #2e2e2e;
+        letter-spacing: .01rem;
+        line-height: 1.75rem;
+    }
+
+    .footer {
+        background-color: #fff;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        border: solid rgba(0, 0, 0, 0.125) 1px;
+        color: #aaaaaa;
+        overflow: hidden;
+    }
+
+    .contact ul {
+        display: flex;
+    }
+
+    .heading {
+        padding-bottom: 10px;
+    }
+}
