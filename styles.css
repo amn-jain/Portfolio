@@ -163,7 +163,7 @@ a {
         display: grid;
         height: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 500px 200px 40px;
+        grid-template-rows: 300px 200px 40px;
     }
 
     .content {
