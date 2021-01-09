@@ -199,3 +199,10 @@ a {
         padding-bottom: 10px;
     }
 }
+
+@media screen and (max-width : 411px){
+    .nav-buttons {
+        color: #333232;
+        padding: 30px 4px;
+    }
+} 
