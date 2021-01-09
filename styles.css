@@ -143,10 +143,28 @@ a {
     margin: 10px 30px;
 }
 
-.contact-list span {
+.contact-list span{
     font-family: 'Open Sans', sans-serif;
     padding: 2px 0px 2px 5px;
     color: #333232;
+    display: inline;
+    vertical-align: top;
+}
+
+#linkedin {
+    color: #0072b1;
+}
+
+#github {
+    color: #333;
+}
+
+#facebook {
+    color: #3b5998;
+}
+
+#email {
+    color: #c71610;
 }
 
 .footer ul {
@@ -195,10 +213,31 @@ a {
         display: flex;
     }
 
+    .contact-list span{
+        padding-left: 0px;
+    }
+
     .heading {
         margin-top: 0px;
         padding-bottom: 10px;
     }
+
+    #linkedin {
+        padding: 0px 12px;
+    }
+
+    #github {
+        padding: 0px 10px;
+    }
+
+    #facebook {
+        padding: 0px 16px;
+    }
+
+    #email {
+        padding: 0px 5px;
+    }
+
 }
 
 @media screen and (max-width : 411px){
