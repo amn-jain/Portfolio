@@ -1,0 +1,100 @@
+#active {
+    color: #0096cc;
+}
+
+#active:hover {
+    color: #326A85;
+}
+
+
+.jumbotron .flex {
+    align-items: flex-start;
+}
+
+#title {
+    margin-left: 17%;
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+#title a {
+    color: #333232;
+}
+
+#title a:hover {
+    color: #326A85;
+}
+
+.jumbotron {
+    height: 200px;
+}
+
+.intro {
+    margin-left: 17%;
+    font-size: 1.25rem;
+}
+
+#sub-intro {
+    margin-left: 17%;
+    color: #aaaaaa;
+}
+
+#sub-intro a {
+    color: #0096cc;
+}
+
+#sub-intro a:active {
+    color: #0096cc;
+}
+
+.projects {
+    max-width: 800px;
+    min-height: 200px;
+    margin: 50px auto 20px auto;
+    padding: 32px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid rgba(0, 0, 0, 0.125) 1px;
+}
+
+.images {
+    width: 200px;
+    height: 200px;
+}
+
+.project-content {
+    margin-left: 30px;
+    width: 450px;
+}
+
+.project-link {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    color: #0096cc;
+}
+
+.project-heading {
+    font-size: 1.75rem;
+}
+
+.project-heading a {
+    color: #333232;
+}
+
+.project-heading a:hover {
+    color: #326A85;
+}
+
+@media screen and (max-width: 420px){
+    .projects{
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-content{
+        margin-left: 0px;
+        margin-top: 20px;
+        width: 75vw;
+    }
+    .project-heading {
+        text-align: left;
+    }
+}
