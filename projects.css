@@ -97,4 +97,14 @@
     .project-heading {
         text-align: left;
     }
+    #title {
+        margin-left: 10%;
+    }
+    .intro {
+        margin-left: 10%;
+    }
+    #sub-intro {
+        margin-left: 10%;
+    }
+
 }
