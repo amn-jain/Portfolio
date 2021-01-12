@@ -183,7 +183,7 @@ function bestMove(board) {
 
 function bot(){
     if(which_player == 0){
-        if(level == "Imposible"){
+        if(level == "Impossible"){
             board = bestMove(board);    
         }
         else{
@@ -225,7 +225,7 @@ function playerMove(id) {
         let row = list[0];
         let col = list[1]; 
         if(board[row][col] == " "){
-            document.getElementById(id).style.color = "#ABE6F5";
+            document.getElementById(id).style.color = "#B2C9AB";
             document.getElementById(id).innerHTML = player;
             board[row][col] = player;
             score = evaluate(board);
@@ -236,6 +236,8 @@ function playerMove(id) {
             }
             else{
                 if(Empty){
+                    document.getElementById("banner").style.color = "#FF4242";
+                    document.getElementById("banner").classList.add('glow');
                     document.getElementById("banner").innerHTML = "Winner Winner Chicken Dinner!!!";
                 }
                 else{
@@ -256,8 +258,8 @@ let count = 0;
 function easy_bot(board){
     let flag = true;
     while(flag){
-        let row = Math.floor(Math.random() * Math.floor(2));
-        let col = Math.floor(Math.random() * Math.floor(2));
+        let row = Math.floor(Math.random() * Math.floor(3));
+        let col = Math.floor(Math.random() * Math.floor(3));
         if(board[row][col] == " "){
             board[row][col] = oponent;
             flag = false;
@@ -278,7 +280,7 @@ function easy_bot(board){
                 }
             }
             let id = list[0] + "-" + list[1];
-            document.getElementById(id).style.color = "#fcf75e";
+            document.getElementById(id).style.color = "#E8DDB5";
             document.getElementById(id).innerHTML = oponent;
         }
     }
@@ -296,7 +298,7 @@ function Game(){
     if(count%2 == 0){
         document.getElementById("result").innerHTML = "<h1>Restart Game</h1>";
         if(which_player == 0){
-            if(level == "Imposible"){
+            if(level == "Impossible"){
                 board = bestMove(board);
             }
             else{
@@ -308,8 +310,10 @@ function Game(){
         }
     }
     else{
+        document.getElementById("banner").classList.remove('glow');
         document.getElementById("result").innerHTML = "<h1>Start Game</h1>";
-        document.getElementById("banner").innerHTML = "";
+        document.getElementById("banner").style.color = "#F8F4E3";
+        document.getElementById("banner").innerHTML = "Select Difficulty";
         display_board();
     }
     count++;
