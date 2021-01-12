@@ -251,6 +251,7 @@ function playerMove(id) {
 let level = "easy"
 function level_setter(id){
     level = id;
+    document.getElementById("banner").innerHTML = "Difficulty: " + level;
 }
 
 let count = 0;
