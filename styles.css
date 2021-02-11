@@ -43,9 +43,15 @@ a {
     display: flex;
 }
 
+.icon {
+    display: none;
+}
+
 .logo a {
+    display: inline;
     color: #333232;
     padding: 30px 10px;
+    font-size: 1.75rem;
 }
 
 .logo a:hover {
@@ -175,7 +181,7 @@ a {
     padding: 5px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
 
     .grid-container {
         display: grid;
@@ -240,14 +246,48 @@ a {
 
 }
 
-@media screen and (max-width : 411px){
-    .nav-buttons {
-        color: #333232;
-        padding: 30px 4px;
+@media screen and (max-width: 600px) {
+    .nav-buttons{
+        display: none;
+    }
+    .icon {
+        display: flex;
+        float: right;
+        padding: 30px 10px;
+    }    
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.navbar.responsive {
+        height: 200px;
+    }
+    .navbar.responsive .container{
+        position: relative;
+    }
+    .navbar.responsive .icon {
+        padding: 25px;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive .flex{
+        flex-direction: column;
+        text-align: left;
     }
 
-    .logo a {
-        color: #333232;
-        padding: 30px 5px;
+    .navbar.responsive ul {
+        display: block;
     }
-} 
+
+    .navbar.responsive .nav-buttons{
+        display: block;
+        width: 100vw;
+        text-align: left;
+        padding: 20px;
+        border:  solid rgba(0, 0, 0, 0.125) 1px;
+    }
+
+    .navbar.responsive .logo{
+        margin: auto;
+    }
+  }
