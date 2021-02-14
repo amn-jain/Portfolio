@@ -182,19 +182,29 @@ a {
     padding: 5px;
 }
 
+@media screen and (max-width: 800px) {
+    
+    .grid-container {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 650px 40px;
+    }
+}
+
 @media screen and (max-width: 600px) {
 
     .grid-container {
         display: grid;
-        height: 100%;
+        height: 1vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 200px 40px;
+        grid-template-rows: 650px 200px 40px;
     }
 
     .content {
         grid-column: 1/2;
         grid-row: 1/2;
-        margin: auto auto;
+        margin: 20px auto;
         background-color: #fff;
     }
 
@@ -205,6 +215,7 @@ a {
         color: #2e2e2e;
         letter-spacing: .01rem;
         line-height: 1.75rem;
+        margin-top: 10px;
     }
 
     .footer {
@@ -255,7 +266,7 @@ a {
         display: flex;
         float: right;
         padding: 30px 10px;
-    }    
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -291,4 +302,11 @@ a {
     .navbar.responsive .logo{
         margin: auto;
     }
-  }
+}
+
+@media screen and (max-width: 360px){
+    .grid-container {
+        grid-template-rows: 750px 200px 40px;
+    }
+}
+
