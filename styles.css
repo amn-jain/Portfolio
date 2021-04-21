@@ -106,7 +106,7 @@ a {
   display: grid;
   height: 100%;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 600px 40px;
+  grid-template-rows: auto 40px;
 }
 
 .content {
@@ -180,18 +180,12 @@ a {
   padding: 5px;
 }
 
-@media screen and (max-width: 1024px) {
-  .grid-container {
-    grid-template-rows: 700px 40px;
-  }
-}
-
 @media screen and (max-width: 800px) {
   .grid-container {
     display: grid;
     height: 100%;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 850px 40px;
+    grid-template-rows: auto 40px;
   }
 }
 
@@ -200,7 +194,7 @@ a {
     display: grid;
     height: 1vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 800px 200px 40px;
+    grid-template-rows: auto 200px 40px;
   }
 
   .content {
@@ -302,17 +296,5 @@ a {
 
   .navbar.responsive .logo {
     margin: auto;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .grid-container {
-    grid-template-rows: 900px 200px 40px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .grid-container {
-    grid-template-rows: 1000px 200px 40px;
   }
 }
