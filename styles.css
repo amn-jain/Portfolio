@@ -73,7 +73,7 @@ a {
 .jumbotron {
   background-color: #f5f8fa;
   border: solid rgba(0, 0, 0, 0.125) 1px;
-  height: 350px;
+  height: 300px;
 }
 
 .jumbotron .flex {
@@ -138,6 +138,7 @@ a {
 
 .main-content {
   margin: 10px 30px;
+  text-align: justify;
 }
 
 .main-content span {
